@@ -1,0 +1,18 @@
+<header>
+    <div class="accessibility-bar bg-black container">
+        <menu class="ul-nav">
+            <li id="btn-font-increment" (click)="incrementFont()" class="li-nav btn-text btn-accessibility me-2">+A</li>
+
+            <li id="btn-font-increment" (click)="resetFont()" class="li-nav btn-text btn-accessibility me-2">A</li>
+
+            <li id="btn-font-increment" (click)="decrementFont()" class="li-nav btn-text btn-accessibility">-A</li>
+        </menu>
+    </div>
+    <nav class="navbar bg-secondary container d-flex justify-content-center align-items-center">
+        <menu class="ul-nav my-2">
+            <li (click)="changeToAdverts()" id="item-adverts" [ngClass]="{'link-active': actualURL === '/adverts'}" class="li-nav btn-text link-nav me-4">Anúncios</li>
+            <li (click)="changeToHome()" id="item-home" [ngClass]="{'link-active': actualURL === '/'}" class="li-nav btn-text link-nav me-4">Home</li>
+            <li (click)="changeToAboutus()" id="item-aboutus" [ngClass]="{'link-active': actualURL === '/aboutus'}" class="li-nav btn-text link-nav">Sobre nós</li>
+        </menu>
+    </nav>
+</header>
